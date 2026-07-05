@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "244765017519",
+    "project_id": "altayar-delivery",
+    "storage_bucket": "altayar-delivery.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:244765017519:android:6e40c165c6e98f620c5b5a",
+        "android_client_info": {
+          "package_name": "com.altayar.driver"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-M0odcYKElH7Qp-VJ5cw7_x49iEVpN_s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
