@@ -1,0 +1,12 @@
+{
+  "appId": "com.altayar.driver",
+  "appName": "الطيار ديليفري - المندوب",
+  "webDir": "www",
+  "server": {
+    "url": "https://saifelsheikh300.github.io/altayar-delivery/orders.html",
+    "cleartext": false
+  },
+  "android": {
+    "allowMixedContent": false
+  }
+}
