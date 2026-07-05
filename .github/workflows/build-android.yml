@@ -35,11 +35,12 @@ jobs:
       - name: Place google-services.json
         run: cp google-services.json android/app/google-services.json
 
-      - name: Add Firebase + Push Notification plugin to Gradle
+      - name: Add Firebase classpath to project build.gradle
         run: |
-          echo "" >> android/build.gradle
-          echo "buildscript { repositories { google(); mavenCentral() } dependencies { classpath 'com.google.gms:google-services:4.4.2' } }" >> android/build.gradle
-          echo "apply plugin: 'com.google.gms.google-services'" >> android/app/build.gradle
+          sed -i "/classpath 'com.android.tools.build:gradle/a\\        classpath 'com.google.gms:google-services:4.4.2'" android/build.gradle
+
+      - name: Apply Firebase plugin to app build.gradle
+        run: echo "apply plugin: 'com.google.gms.google-services'" >> android/app/build.gradle
 
       - name: Grant execute permission for gradlew
         run: chmod +x android/gradlew
