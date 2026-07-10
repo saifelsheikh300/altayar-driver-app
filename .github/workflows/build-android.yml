@@ -46,6 +46,14 @@ jobs:
         run: |
           echo "apply plugin: 'com.google.gms.google-services'" >> android/app/build.gradle
 
+      - name: Add custom animated splash logo
+        run: |
+          mkdir -p android/app/src/main/res/drawable
+          cp native-patch/altayar_splash_logo.png android/app/src/main/res/drawable/altayar_splash_logo.png
+
+      - name: Add custom animated splash screen (MainActivity)
+        run: cp native-patch/MainActivity.java android/app/src/main/java/com/altayar/driver/MainActivity.java
+
       - name: Grant execute permission for gradlew
         run: chmod +x android/gradlew
 
