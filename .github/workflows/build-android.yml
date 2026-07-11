@@ -30,7 +30,7 @@ jobs:
         run: npx cap add android
 
       - name: Generate app icon from resources/icon.png
-        run: npx capacitor-assets generate --android --iconBackgroundColor '#FF4500' --iconBackgroundColorDark '#111111' --splashBackgroundColor '#FF4500' --splashBackgroundColorDark '#FF4500'
+        run: npx capacitor-assets generate --android --iconBackgroundColor '#FD5003' --iconBackgroundColorDark '#111111' --splashBackgroundColor '#FD5003' --splashBackgroundColorDark '#FD5003'
 
       - name: Sync Capacitor
         run: npx cap sync android

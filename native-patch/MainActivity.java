@@ -38,7 +38,7 @@ public class MainActivity extends BridgeActivity {
         final long startTime = System.currentTimeMillis();
 
         final FrameLayout overlay = new FrameLayout(this);
-        overlay.setBackgroundColor(Color.parseColor("#FF4500")); // نفس لون البراند
+        overlay.setBackgroundColor(Color.parseColor("#FD5003")); // نفس لون البراند
 
         final ImageView logo = new ImageView(this);
         logo.setImageResource(R.drawable.altayar_splash_logo);

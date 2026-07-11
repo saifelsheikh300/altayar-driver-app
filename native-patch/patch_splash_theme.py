@@ -21,7 +21,7 @@ if target not in content:
     sys.exit(1)
 
 new_items = (
-    '\n        <item name="windowSplashScreenBackground">#FF4500</item>'
+    '\n        <item name="windowSplashScreenBackground">#FD5003</item>'
     '\n        <item name="windowSplashScreenAnimatedIcon">@drawable/transparent_icon</item>'
 )
 
