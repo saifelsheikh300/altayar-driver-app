@@ -66,7 +66,7 @@ public class MainActivity extends BridgeActivity {
 
             if ((loaded && elapsed >= MIN_DISPLAY_MS) || elapsed >= MAX_DISPLAY_MS) {
                 ObjectAnimator fadeOut = ObjectAnimator.ofFloat(overlay, "alpha", 1f, 0f);
-                fadeOut.setDuration(300);
+                fadeOut.setDuration(450);
                 fadeOut.addListener(new AnimatorListenerAdapter() {
                     @Override
                     public void onAnimationEnd(Animator animation) {
