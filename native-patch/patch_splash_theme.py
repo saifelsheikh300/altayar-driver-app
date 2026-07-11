@@ -22,8 +22,8 @@ if target not in content:
 
 new_items = (
     '\n        <item name="windowSplashScreenBackground">#FD5003</item>'
-    '\n        <item name="windowSplashScreenAnimatedIcon">@drawable/transparent_icon</item>'
-    '\n        <item name="windowSplashScreenAnimationDuration">1</item>'
+    '\n        <item name="windowSplashScreenAnimatedIcon">@drawable/altayar_splash_logo</item>'
+    '\n        <item name="windowSplashScreenAnimationDuration">200</item>'
 )
 
 content = content.replace(target, target + new_items, 1)
