@@ -22,7 +22,7 @@ if target not in content:
 
 new_items = (
     '\n        <item name="windowSplashScreenBackground">#FD5003</item>'
-    '\n        <item name="windowSplashScreenAnimatedIcon">@drawable/altayar_splash_logo</item>'
+    '\n        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>'
     '\n        <item name="windowSplashScreenAnimationDuration">200</item>'
 )
 
