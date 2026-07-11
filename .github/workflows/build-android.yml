@@ -50,6 +50,10 @@ jobs:
         run: |
           mkdir -p android/app/src/main/res/drawable
           cp native-patch/altayar_splash_logo.png android/app/src/main/res/drawable/altayar_splash_logo.png
+          cp native-patch/transparent_icon.png android/app/src/main/res/drawable/transparent_icon.png
+
+      - name: Fix Android 12+ system splash (orange instead of black square)
+        run: python3 native-patch/patch_splash_theme.py
 
       - name: Add custom animated splash screen (MainActivity)
         run: cp native-patch/MainActivity.java android/app/src/main/java/com/altayar/driver/MainActivity.java
